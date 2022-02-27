@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Raleway, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.hero {
+  background: linear-gradient(243.83deg, #00943f 19.88%, #4181ed 100%);
+}
+
+.privacy-policy h2 {
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.privacy-policy p {
+  line-height: 2em;
+}
+
+.privacy-policy p:first-of-type {
+  margin-top: 3em;
+}
+
+#home {
+  background: linear-gradient(243.83deg, #00943f 19.88%, #4181ed 100%);
+
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  #home {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position-x: -38em;
+  }
+}
